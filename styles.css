@@ -1,0 +1,75 @@
+@font-face {
+    src: url('fonts/MochiyPopOne-Regular.ttf');
+    font-family: mochiy;
+}
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: mochiy;
+}
+h1{
+    color: #8090BA;
+}
+nav img{
+    margin: 1em;
+    max-width: 4em;
+    height: auto;
+}
+.hero-section{
+ display: flex;
+ flex-direction: column;
+
+}
+
+
+.floating-image img{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 60vw;
+    height: auto;
+}
+.hero-text{
+    align-self: flex-end;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 20px;
+}
+button{
+    padding: .5em;
+    font-size: .75em;
+    color: white;
+    background-color: #8090BA;
+    border-radius: 20px;
+    border: none;
+    font-family: mochiy;
+    box-shadow: 10px 10px 30px #888888;}
+button:hover{
+    background-color: white;
+    color: #8090BA;
+    border: solid 5px #8090BA;
+}
+@media (max-width:1000px) {
+    .floating-image{
+        align-self: flex-start;
+    
+    }
+    .floating-image img{
+        position: relative;
+         width: 100%;
+         max-height: 70vh;
+         overflow: hidden;
+     }
+     .hero-text{
+        align-self: auto;
+         font-size: 2.5em;
+         text-align: center;
+     }
+     /* .hero-section{
+        display: flex;
+        justify-content: center;
+       
+       } */
+ }
